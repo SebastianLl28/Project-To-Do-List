@@ -1,0 +1,16 @@
+@mixin grid-init($column, $column-size, $row, $row-size, $gap:0) {
+    display: grid;
+    grid-template-columns: repeat($column, $column-size);
+    grid-template-rows: repeat($row, $row-size);
+    gap: $gap;
+}
+
+@mixin flex-init($direction, $align, $justify, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+
